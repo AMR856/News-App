@@ -1,0 +1,25 @@
+flutter_native_splash:
+  color: "#FFFFFF"
+  image: assets/news_logo_light.png
+  branding: assets/news_branding_light.png
+
+  color_dark: "#171717"
+  image_dark: assets/news_logo_dark.png
+  branding_dark: assets/news_branding_dark.png
+
+  android_12:
+    image: assets/news_logo_light.png
+    color: "#FFFFFF"
+    branding: assets/news_branding_light.png
+    image_dark: assets/news_logo_dark.png
+    color_dark: "#171717"
+    branding_dark: assets/news_branding_dark.png
+
+  android: true
+  ios: true
+  web: false
+
+  # Optional positioning and appearance
+  # android_gravity: center
+  # ios_content_mode: center
+  # fullscreen: false
