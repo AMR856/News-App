@@ -34,4 +34,53 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get good_morning => 'Good Morning\nHere is Some News For You';
+
+  @override
+  String get view_full_article => 'View Full Article';
+
+  @override
+  String get open_link =>
+      'Could not open the link. Please check your external applications.';
+
+  @override
+  String get not_valid_link => 'The link is not valid or cannot be opened.';
+
+  @override
+  String get not_available => 'No link is available for this article.';
+
+  @override
+  String get unknown => 'Unknown';
+
+  @override
+  String get business => 'Business';
+
+  @override
+  String get entertainment => 'Entertainment';
+
+  @override
+  String get health => 'Health';
+
+  @override
+  String get science => 'Science';
+
+  @override
+  String get sports => 'Sports';
+
+  @override
+  String get technology => 'Technology';
+
+  @override
+  String get error => 'Error';
+
+  @override
+  String get no_articles => 'No articles available';
+
+  @override
+  String get no_sources => 'No sources available';
+
+  @override
+  String get ok => 'Ok';
+
+  @override
+  String get search_articles => 'Search Articles...';
 }

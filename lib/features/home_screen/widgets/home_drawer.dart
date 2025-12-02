@@ -52,7 +52,7 @@ class HomeDrawer extends StatelessWidget {
                       ),
                     ],
                   ),
-                  onTap: () => viewProvider.clearCategory(),
+                  onTap: () => viewProvider.clearCategory(context),
                 ),
                 SizedBox(height: 24.h),
                 Divider(color: ColorManager.white, thickness: 1.w),

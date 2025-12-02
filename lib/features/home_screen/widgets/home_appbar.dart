@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:news_app/core/route_manager.dart';
 import 'package:news_app/features/home_screen/providers/view_provider.dart';
-import 'package:news_app/l10n/app_localizations.dart';
+
 import 'package:provider/provider.dart';
 
 class HomeAppbar extends StatelessWidget implements PreferredSizeWidget {
@@ -9,19 +10,16 @@ class HomeAppbar extends StatelessWidget implements PreferredSizeWidget {
 
   @override
   Widget build(BuildContext context) {
-    AppLocalizations appLocalizations = AppLocalizations.of(context)!;
     var viewProvider = Provider.of<ViewProvider>(context);
-
     return AppBar(
       forceMaterialTransparency: true,
       title: Padding(
         padding: REdgeInsets.symmetric(horizontal: 12.0),
         child: Text(
-          viewProvider.title,
-          style: Theme.of(context)
-              .textTheme
-              .headlineMedium!
-              .copyWith(fontWeight: FontWeight.w500),
+          viewProvider.title(context),
+          style: Theme.of(
+            context,
+          ).textTheme.headlineMedium!.copyWith(fontWeight: FontWeight.w500),
         ),
       ),
       leading: Padding(
@@ -38,7 +36,15 @@ class HomeAppbar extends StatelessWidget implements PreferredSizeWidget {
       actions: [
         Padding(
           padding: REdgeInsets.symmetric(horizontal: 12.0),
-          child: const Icon(Icons.search),
+          child: IconButton(
+            onPressed: () {
+              Navigator.pushReplacementNamed(
+                context,
+                RouteManager.searchScreen,
+              );
+            },
+            icon: Icon(Icons.search),
+          ),
         ),
       ],
     );

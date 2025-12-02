@@ -1,8 +1,8 @@
-import 'package:news_app/api/models/sources.dart';
+import 'package:news_app/api/models/source.dart';
 
 class SourcesResponse {
   final String status;
-  final List<Sources> sources;
+  final List<Source> sources;
 
   SourcesResponse({
     required this.status,
@@ -13,7 +13,7 @@ class SourcesResponse {
     return SourcesResponse(
       status: json['status'] ?? "",
       sources: (json['sources'] as List<dynamic>? ?? [])
-          .map((e) => Sources.fromJson(e))
+          .map((e) => Source.fromJson(e))
           .toList(),
     );
   }

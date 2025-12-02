@@ -151,6 +151,102 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Good Morning\nHere is Some News For You'**
   String get good_morning;
+
+  /// No description provided for @view_full_article.
+  ///
+  /// In en, this message translates to:
+  /// **'View Full Article'**
+  String get view_full_article;
+
+  /// No description provided for @open_link.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not open the link. Please check your external applications.'**
+  String get open_link;
+
+  /// No description provided for @not_valid_link.
+  ///
+  /// In en, this message translates to:
+  /// **'The link is not valid or cannot be opened.'**
+  String get not_valid_link;
+
+  /// No description provided for @not_available.
+  ///
+  /// In en, this message translates to:
+  /// **'No link is available for this article.'**
+  String get not_available;
+
+  /// No description provided for @unknown.
+  ///
+  /// In en, this message translates to:
+  /// **'Unknown'**
+  String get unknown;
+
+  /// No description provided for @business.
+  ///
+  /// In en, this message translates to:
+  /// **'Business'**
+  String get business;
+
+  /// No description provided for @entertainment.
+  ///
+  /// In en, this message translates to:
+  /// **'Entertainment'**
+  String get entertainment;
+
+  /// No description provided for @health.
+  ///
+  /// In en, this message translates to:
+  /// **'Health'**
+  String get health;
+
+  /// No description provided for @science.
+  ///
+  /// In en, this message translates to:
+  /// **'Science'**
+  String get science;
+
+  /// No description provided for @sports.
+  ///
+  /// In en, this message translates to:
+  /// **'Sports'**
+  String get sports;
+
+  /// No description provided for @technology.
+  ///
+  /// In en, this message translates to:
+  /// **'Technology'**
+  String get technology;
+
+  /// No description provided for @error.
+  ///
+  /// In en, this message translates to:
+  /// **'Error'**
+  String get error;
+
+  /// No description provided for @no_articles.
+  ///
+  /// In en, this message translates to:
+  /// **'No articles available'**
+  String get no_articles;
+
+  /// No description provided for @no_sources.
+  ///
+  /// In en, this message translates to:
+  /// **'No sources available'**
+  String get no_sources;
+
+  /// No description provided for @ok.
+  ///
+  /// In en, this message translates to:
+  /// **'Ok'**
+  String get ok;
+
+  /// No description provided for @search_articles.
+  ///
+  /// In en, this message translates to:
+  /// **'Search Articles...'**
+  String get search_articles;
 }
 
 class _AppLocalizationsDelegate

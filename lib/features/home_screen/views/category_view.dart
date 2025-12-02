@@ -4,8 +4,7 @@ import 'package:news_app/features/home_screen/models/category_model.dart';
 import 'package:news_app/l10n/app_localizations.dart';
 import 'package:news_app/providers/theme_provider.dart';
 import 'package:provider/provider.dart';
-
-import '../providers/view_provider.dart';
+import 'package:news_app/features/home_screen/providers/view_provider.dart';
 
 class CategoryView extends StatelessWidget {
   const CategoryView({super.key});
@@ -17,8 +16,8 @@ class CategoryView extends StatelessWidget {
 
     final bool isDark = themeProvider.currentTheme == ThemeMode.dark;
     final categories = isDark
-        ? CategoryModel.darkCategories
-        : CategoryModel.lightCategories;
+        ? CategoryModel.getDarkCategories(context)
+        : CategoryModel.getLightCategories(context);
 
     final appLocalizations = AppLocalizations.of(context)!;
 

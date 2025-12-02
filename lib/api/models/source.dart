@@ -1,4 +1,4 @@
-class Sources {
+class Source {
   final String id;
   final String name;
   final String description;
@@ -7,7 +7,7 @@ class Sources {
   final String language;
   final String country;
 
-  Sources({
+  Source({
     required this.id,
     required this.name,
     required this.description,
@@ -17,8 +17,8 @@ class Sources {
     required this.country,
   });
 
-  factory Sources.fromJson(Map<String, dynamic> json) {
-    return Sources(
+  factory Source.fromJson(Map<String, dynamic> json) {
+    return Source(
       id: json['id'] ?? "",
       name: json['name'] ?? "",
       description: json['description'] ?? "",

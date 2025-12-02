@@ -7,5 +7,21 @@
   "dark": "Dark",
   "home": "Home",
   "general": "General",
-  "good_morning": "Good Morning\nHere is Some News For You"
+  "good_morning": "Good Morning\nHere is Some News For You",
+  "view_full_article": "View Full Article",
+  "open_link": "Could not open the link. Please check your external applications.",
+  "not_valid_link": "The link is not valid or cannot be opened.",
+  "not_available": "No link is available for this article.",
+  "unknown": "Unknown",
+  "business": "Business",
+  "entertainment": "Entertainment",
+  "health": "Health",
+  "science": "Science",
+  "sports": "Sports",
+  "technology": "Technology",
+  "error": "Error",
+  "no_articles": "No articles available",
+  "no_sources": "No sources available",
+  "ok": "Ok",
+  "search_articles": "Search Articles..."
 }
