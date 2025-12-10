@@ -4,17 +4,17 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:news_app/config/shared_pref_manager.dart';
 import 'package:news_app/config/theme_manager.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:news_app/core/route_manager.dart';
+import 'package:news_app/core/di/di.dart';
+import 'package:news_app/core/route_manager/route_manager.dart';
 import 'package:news_app/l10n/app_localizations.dart';
 import 'package:provider/provider.dart';
-
-import 'providers/language_provider.dart';
-import 'providers/theme_provider.dart';
+import 'package:news_app/providers/language_provider.dart';
+import 'package:news_app/providers/theme_provider.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await dotenv.load(fileName: ".env");
-
+  configureDependencies();
   await SharedPrefManager.init();
   runApp(
     MultiProvider(

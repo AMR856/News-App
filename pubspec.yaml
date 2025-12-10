@@ -43,10 +43,18 @@ dependencies:
   flutter_dotenv: ^5.1.0
   dartz: ^0.10.1
   url_launcher: ^6.1.10
+  dio: ^5.9.0
+  flutter_bloc: ^9.1.1
+  injectable: null
+  # add get_it
+  get_it: null
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
+  # add the generator to your dev_dependencies
+  injectable_generator: null
+  # add build runner if not already added
+  build_runner: null
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
   # activated in the `analysis_options.yaml` file located at the root of your
